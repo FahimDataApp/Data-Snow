@@ -23,14 +23,14 @@ streamlit.dataframe(fruit_to_show)
 #New Section to Display fruityvice API response
 #streamlit.header('Fruityvice FRuit ADvice\!')
 
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+#import requests
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #streamlit.text(fruityvice_response.json())
 
 #take the json version of the response and normalize it
-fruityvice_narmalized = pandas.json_narmalize(fruityvice_response.json())
+#fruityvice_narmalized = pandas.json_narmalize(fruityvice_response.json())
 #output it as table
-streamlit.dataframe(fruityvice_narmalized)
+#streamlit.dataframe(fruityvice_narmalized)
 
 import snowflake.connector
 
